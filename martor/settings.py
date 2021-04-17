@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.conf import settings
+import os
 
 # Choices are: "semantic", "bootstrap"
 MARTOR_THEME = getattr(settings, 'MARTOR_THEME', 'bootstrap')
@@ -106,3 +107,6 @@ MARTOR_ALTERNATIVE_CSS_FILE_THEME = getattr(
 MARTOR_ALTERNATIVE_JQUERY_JS_FILE = getattr(
     settings, 'MARTOR_ALTERNATIVE_JQUERY_JS_FILE', None
 )
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
