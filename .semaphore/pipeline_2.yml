@@ -26,4 +26,3 @@ blocks:
           - cd martor_demo
           - 'python manage.py makemigrations '
           - python manage.py migrate
-          - cd ..
